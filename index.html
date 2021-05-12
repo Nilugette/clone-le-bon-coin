@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Le bon coin clone</title>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <div class="navbar clearfix">
-                <div class="topbar-logo-ad-search">
-                    <a href="#home"><img src="img/logo.svg" alt="Logo"></a>
-                    <a href="#newadd" class="button-newad"><img src="img/newad.svg" alt="New Ad"><span>Déposer une annonce</span></a>
-                    <a href="#search"><img src="img/search.svg" alt="Search"><span>Rechercher</span></a>
-                </div>
-                <div class="topbar-nav">
-                    <a href="#mysearch"><img src="img/bell.svg" alt="My search">Mes recherches</a>
-                    <a href="#heart"><img src="img/heart.svg" alt="Heart">Mes favoris</a>
-                    <a href="#messages"><img src="img/message.svg" alt="Message">Messages</a>
-                    <a href="#user"><img src="img/user.svg" alt="User">Se connecter</a>
-                </div>
+        <header class="navbar clearfix" id="myTopnav">
+            <div class="topbar-logo-ad-search">
+                <a href="#home" class="logo"><img src="img/logo.svg" alt="Logo"></a>
+                <a href="#newadd" class="button-newad"><img src="img/newad.svg" alt="New Ad"><span>Déposer une annonce</span></a>
+                <a href="#search"><img src="img/search.svg" alt="Search"><span>Rechercher</span></a>
             </div>
+            <div class="topbar-nav">
+                <a href="#mysearch"><img src="img/bell.svg" alt="My search"><span>Mes recherches</span></a>
+                <a href="#heart"><img src="img/heart.svg" alt="Heart"><span>Mes favoris</span></a>
+                <a href="#messages"><img src="img/message.svg" alt="Message"><span>Messages</span></a>
+                <a href="#user"><img src="img/user.svg" alt="User"><span>Se connecter</span></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-3x"></i>
+            </a>
         </header>
-        
         <main class="main">
             <div class="header-main"></div>
             <div class="container">
 
             </div>   
         </main>
+
+
+        <script src="index.js"></script>
     </body>
 </html>

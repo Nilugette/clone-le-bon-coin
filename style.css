@@ -58,8 +58,7 @@ body {
 }
 
 .navbar {
-  margin: 0 auto;
-  display: inline-block;
+  overflow: hidden;
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -74,8 +73,11 @@ body {
   margin: 0 0.5rem;
   padding: 0.5rem;
 }
-.navbar a:hover {
-  text-decoration-color: #ff6e14;
+.navbar .icon {
+  color: #ff6e14;
+  display: none;
+  height: 50px;
+  width: 50px;
 }
 
 .topbar-logo-ad-search {
@@ -147,6 +149,7 @@ body {
 }
 
 .header-main {
+  display: block;
   height: 300px;
   background: #ff6e14;
   border-radius: 0 0 50% 50%;
@@ -162,6 +165,51 @@ body {
   width: 80%;
   height: 1300px;
   background: #fff;
+}
+
+@media only screen and (max-width: 970px) {
+  .navbar a:not(.logo):not(.icon) {
+    display: none;
+  }
+  .navbar .icon {
+    display: block;
+  }
+
+  .topbar-logo-ad-search {
+    float: right;
+  }
+
+  .topbar-nav {
+    display: block;
+  }
+
+  .header-main {
+    display: none;
+  }
+
+  .navbar.responsive .topbar-logo-ad-search {
+    float: none;
+  }
+  .navbar.responsive .topbar-logo-ad-search a {
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive .topbar-logo-ad-search a img {
+    vertical-align: middle;
+  }
+  .navbar.responsive .topbar-logo-ad-search a:last-child {
+    border-bottom: solid 1px #000;
+  }
+  .navbar.responsive .topbar-nav {
+    float: none;
+  }
+  .navbar.responsive .topbar-nav a {
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive .topbar-nav a img {
+    display: inline-block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
