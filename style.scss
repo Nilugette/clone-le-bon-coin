@@ -4,7 +4,8 @@ $color-orange: #ff6e14;
 $color-orange-hover: #cf5103;
 $color-white: #fff;
 $color-black: #000;
-$blue-pale: rgb(229, 229, 248);
+$blue-pale: rgb(244, 244, 252);
+$color-blue: rgb(56, 56, 197);
 $box-shadow: 0 -1px 4px 0 rgb(26 26 26 / 8%), 0 4px 8px 0 rgb(26 26 26 / 12%);
 
 html {
@@ -147,13 +148,17 @@ body {
 }
 
 .form-box {
+  position: relative;
   margin: 4rem auto;
   width: 80%;
   box-shadow: $box-shadow;
 }
+.radio-box {
+  padding: 10px 40px;
+}
 
 .l-radio {
-  padding:10px;
+  padding-top: 20px;
   border-radius: 50px;
   display: inline-block;
   cursor: pointer;
@@ -202,17 +207,18 @@ body {
 
 .input-box {
   display: block;
-  padding: 10px 40px;
+  padding: 20px 40px;
 
 
   .category {
- 
+    border-right: solid 1px rgba(27, 47, 88, 0.8);
     background: $blue-pale;
-    width: 200px;
+    width: 32%;
     line-height: 40px;
     padding: 0 20px;
+    display: inline-block;
 
-    .menu:before {
+    .menu::before {
       position: absolute;
       content: '';
       height: 20px;
@@ -237,6 +243,17 @@ body {
     .b-dropdown {
       display: inline;
       cursor: pointer;
+      width: 100%;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        vertical-align: middle;
+        background: url(img/category.svg) center center / contain no-repeat;
+      }
     }
 
     span {
@@ -290,23 +307,109 @@ body {
   }
   
   .research {
-    display: inline;
+    display: inline-block;
+    width: 31%;
+
+
+    label {
+      position: relative;
+    }
+
+    label::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 20px;
+      background: url(img/search.svg) center center / contain no-repeat;
+    }
 
     #research {
-      
+      background: $blue-pale;
+      border: none;
+      width: 100%;
+      padding: 10px 30px;
     }
 
   }
   
   .location {
-    display: inline;
+    display: inline-block;
+    width: 31%;
+
+    label {
+      position: relative;
+    }
+
+    label::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 20px;
+      background: url(img/location.svg) center center / contain no-repeat;
+    }
+
     #location {
-      
+      background: $blue-pale;
+      border: none;
+      width: 100%;
+      padding: 10px 30px;
     }
   }
 }
 
+.price {
+  padding: 20px 40px;
+  background: $color-white;
+  
+  button {
+    padding:10px 30px;
+    border-radius:20px;
+  }
+}
 
+.submit-btn {
+  padding: 20px 40px;
+  position: absolute;
+  bottom: -13%;
+  left: 36%;
+  
+
+  button {
+    padding: 15px 30px;
+    border-radius:5px;
+    background: $color-blue;
+    color: $color-white;
+    border: none;
+    font-weight: bold;
+  }
+}
+
+.delivery-save {
+  display: inline-block;
+  padding: 20px 40px;
+  width: 80%;
+  .delivery {
+    float: left;
+    padding: 30px 40px;
+    button, img, .available-ad {
+      display: inline-block;
+    }
+  }
+
+  .save {
+    float: right;
+    padding: 30px 40px;
+    
+    img, .save-search {
+      display: inline-block;
+    }
+  }
+  
+}
   
 
 @media only screen and (max-width: 970px) {

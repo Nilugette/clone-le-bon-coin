@@ -168,13 +168,18 @@ body {
 }
 
 .form-box {
+  position: relative;
   margin: 4rem auto;
   width: 80%;
   box-shadow: 0 -1px 4px 0 rgba(26, 26, 26, 0.08), 0 4px 8px 0 rgba(26, 26, 26, 0.12);
 }
 
+.radio-box {
+  padding: 10px 40px;
+}
+
 .l-radio {
-  padding: 10px;
+  padding-top: 20px;
   border-radius: 50px;
   display: inline-block;
   cursor: pointer;
@@ -215,15 +220,17 @@ body {
 
 .input-box {
   display: block;
-  padding: 10px 40px;
+  padding: 20px 40px;
 }
 .input-box .category {
-  background: #e5e5f8;
-  width: 200px;
+  border-right: solid 1px rgba(27, 47, 88, 0.8);
+  background: #f4f4fc;
+  width: 32%;
   line-height: 40px;
   padding: 0 20px;
+  display: inline-block;
 }
-.input-box .category .menu:before {
+.input-box .category .menu::before {
   position: absolute;
   content: "";
   height: 20px;
@@ -243,6 +250,16 @@ body {
 .input-box .category .b-dropdown {
   display: inline;
   cursor: pointer;
+  width: 100%;
+}
+.input-box .category .b-dropdown::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background: url(img/category.svg) center center/contain no-repeat;
 }
 .input-box .category span {
   float: right;
@@ -284,11 +301,94 @@ body {
   padding-left: 30px;
 }
 .input-box .research {
-  display: inline;
+  display: inline-block;
+  width: 31%;
+}
+.input-box .research label {
+  position: relative;
+}
+.input-box .research label::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url(img/search.svg) center center/contain no-repeat;
+}
+.input-box .research #research {
+  background: #f4f4fc;
+  border: none;
+  width: 100%;
+  padding: 10px 30px;
 }
 .input-box .location {
-  display: inline;
+  display: inline-block;
+  width: 31%;
 }
+.input-box .location label {
+  position: relative;
+}
+.input-box .location label::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: url(img/location.svg) center center/contain no-repeat;
+}
+.input-box .location #location {
+  background: #f4f4fc;
+  border: none;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.price {
+  padding: 20px 40px;
+  background: #fff;
+}
+.price button {
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.submit-btn {
+  padding: 20px 40px;
+  position: absolute;
+  bottom: -13%;
+  left: 36%;
+}
+.submit-btn button {
+  padding: 15px 30px;
+  border-radius: 5px;
+  background: #3838c5;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+
+.delivery-save {
+  display: inline-block;
+  padding: 20px 40px;
+  width: 80%;
+}
+.delivery-save .delivery {
+  float: left;
+  padding: 30px 40px;
+}
+.delivery-save .delivery button, .delivery-save .delivery img, .delivery-save .delivery .available-ad {
+  display: inline-block;
+}
+.delivery-save .save {
+  float: right;
+  padding: 30px 40px;
+}
+.delivery-save .save img, .delivery-save .save .save-search {
+  display: inline-block;
+}
+
 @media only screen and (max-width: 970px) {
   .navbar a:not(.logo):not(.icon) {
     display: none;
