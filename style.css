@@ -517,9 +517,11 @@ section {
   float: left;
   width: 68%;
 }
+section article, section .blank, section button {
+  width: 100%;
+}
 section article {
   height: 16rem;
-  width: 100%;
 }
 section article img {
   float: left;
@@ -530,6 +532,22 @@ section article img {
 section article .description {
   float: right;
   width: 65%;
+}
+section .blank {
+  height: 5rem;
+  border: solid 1px #8191a0;
+  margin-bottom: 20px;
+}
+section button {
+  background-color: #3838c5;
+  height: 5rem;
+  color: #fff;
+  font-size: 1.8rem;
+  border: none;
+}
+section button img, section button .save-search-section {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 aside {

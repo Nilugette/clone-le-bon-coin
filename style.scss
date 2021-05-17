@@ -583,9 +583,12 @@ section {
   float: left;
   width: 68%;
 
+  article, .blank, button {
+    width: 100%;
+  }
+
   article {
     height: 16rem;
-    width: 100%;
 
     img {
       float: left;
@@ -598,6 +601,26 @@ section {
       float: right;
       width: 65%;
     }
+  }
+
+  .blank {
+    height: 5rem;
+    border: solid 1px $color-blue-pastel;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: $color-blue;
+    height: 5rem;
+    color:$color-white;
+    font-size: 1.8rem;
+    border: none;
+
+    img, .save-search-section {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
   }
 }
 
