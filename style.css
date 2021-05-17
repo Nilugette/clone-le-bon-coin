@@ -57,6 +57,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #fff;
@@ -67,9 +72,7 @@ body {
   z-index: 5;
 }
 .navbar a {
-  color: #000;
   text-align: center;
-  text-decoration: none;
   margin: 0 0.5rem;
   padding: 0.5rem;
 }
@@ -186,9 +189,6 @@ body {
   transition: background 0.2s ease;
   margin: 8px 0;
   -webkit-tap-highlight-color: transparent;
-}
-.l-radio:hover, .l-radio:focus-within {
-  background: rgba(255, 110, 20, 0.1);
 }
 .l-radio input {
   vertical-align: middle;
@@ -445,7 +445,7 @@ body {
 
 .ad-container {
   width: 100%;
-  padding: 5px 20px;
+  padding: 20px 0;
   display: block;
   font-size: 1.6rem;
   font-weight: bold;
@@ -460,6 +460,97 @@ body {
 }
 .ad-container .ad-filter #filter-option {
   padding: 8px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+section, aside {
+  padding: 2rem 0;
+  display: block;
+}
+section article, aside article {
+  border: solid 1px #8191a0;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+section article .description, aside article .description {
+  margin-top: 2rem;
+}
+section article .description a, aside article .description a {
+  font-size: 2rem;
+  font-weight: bold;
+}
+section article .description a:hover, aside article .description a:hover {
+  color: #ff6e14;
+}
+section article .description .price-ad, aside article .description .price-ad {
+  margin-top: 8px;
+}
+section article .description .price-ad span, aside article .description .price-ad span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+section article .description .details, aside article .description .details {
+  padding: 20px 0;
+  color: #8191a0;
+  font-weight: bold;
+}
+section article .description .details p, aside article .description .details p {
+  line-height: 1.6;
+}
+section article .description img, aside article .description img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #ff6e14;
+}
+
+section {
+  float: left;
+  width: 68%;
+}
+section article {
+  height: 16rem;
+  width: 100%;
+}
+section article img {
+  float: left;
+  width: 30%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+section article .description {
+  float: right;
+  width: 65%;
+}
+
+aside {
+  float: right;
+  width: 30%;
+}
+aside article {
+  height: 40rem;
+}
+aside article img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 50%;
+}
+aside article .description {
+  margin-left: 2rem;
+}
+
+footer {
+  clear: both;
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 970px) {
@@ -507,6 +598,14 @@ body {
   }
   .navbar.responsive .icon {
     float: right;
+  }
+
+  aside article {
+    display: none;
+  }
+
+  section {
+    width: 100%;
   }
 }
 
