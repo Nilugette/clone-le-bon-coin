@@ -20,6 +20,7 @@ $toggle-control-ease: ease-in;
 $toggle-radius: $toggle-height / 2;
 $toggle-control-size: $toggle-height - ($toggle-gutter * 2);
 
+
 html {
   font-family: "Open Sans",sans-serif,Arial;
   font-size: calc(1em * .625 + 0%);
@@ -484,7 +485,39 @@ body {
   }
   
 }
+
+.ad-container {
+  width: 100%;
+  padding: 5px 20px;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  .ad-filter {
+
+    .ad-inline {
+      display: inline-block;
+      width: 18%;
   
+  
+      span {
+        color: $color-orange;
+        padding-left: 3px;
+      }
+    }
+  
+  
+    #filter-option {
+      padding: 8px;
+    }
+    
+  }
+  
+}
+
+
+
+
 
 @media only screen and (max-width: 970px) {
 

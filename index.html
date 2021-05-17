@@ -113,7 +113,6 @@
                                     <input type="checkbox" checked="checked">
                                     <span class="control"></span>
                                   </label>
-                                  
                                 <div class="available-ad">
                                     Voir également les annonces disponibles en livraison
                                 </div>
@@ -130,6 +129,34 @@
                             <button>Rechercher (2 203 212 résultats)</button>
                         </div>
                     </form>
+                </div>
+                <div class="ad-container"> 
+                    <div class="ad-filter">
+                        <div class="ad-number ad-inline">Annonces : <span>45 408 262</span></div>
+                        <div class="ad-inline checkbox-css">
+                            <label> 
+                                <input type="checkbox" id="private" value="private" class="css-checkbox"checked> Particuliers <span>43 235 031</span>
+                            </label>
+                        </div>
+
+                         <div class="ad-inline checkbox-css">
+                            <label>
+                                <input type="checkbox" id="professional" value="professional" class="css-checkbox" checked> Professionnels <span>2 173 231</span>
+                              </label>
+                         </div>
+                         <div class="ad-inline checkbox-css">
+                            <label>
+                                <input type="checkbox" id="urgent" value="urgent" class="css-checkbox"> <img src="img/star.svg" alt="My savings"><span>Urgentes</span>
+                            </label>
+                         </div>
+
+                         <select class="ad-inline" name="filter-option" id="filter-option">
+                            <option value="newer">Tri : Plus récentes</option>
+                            <option value="older">Tri : Plus anciennes</option>
+                            <option value="rising">Tri : Prix croissant</option>
+                            <option value="decreasing">Tri : Prix décroissant</option>
+                        </select>
+                    </div>
                 </div>
             </div>   
         </main>

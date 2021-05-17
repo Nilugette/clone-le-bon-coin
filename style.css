@@ -443,6 +443,25 @@ body {
   vertical-align: middle;
 }
 
+.ad-container {
+  width: 100%;
+  padding: 5px 20px;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.ad-container .ad-filter .ad-inline {
+  display: inline-block;
+  width: 18%;
+}
+.ad-container .ad-filter .ad-inline span {
+  color: #ff6e14;
+  padding-left: 3px;
+}
+.ad-container .ad-filter #filter-option {
+  padding: 8px;
+}
+
 @media only screen and (max-width: 970px) {
   .navbar a:not(.logo):not(.icon) {
     display: none;
