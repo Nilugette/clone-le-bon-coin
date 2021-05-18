@@ -583,7 +583,7 @@ section {
   float: left;
   width: 68%;
 
-  article, .blank, button {
+  article, .blank, button, .pagination {
     width: 100%;
   }
 
@@ -622,7 +622,41 @@ section {
     }
 
   }
+
+  .pagination {
+    text-align: center;
+    margin: 3rem auto;
+
+    .page-number {
+      display: inline-block;
+      
+      a {
+        color: $color-blue;
+        float: left;
+        padding: 10px 16px;
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: normal;
+  
+        &.active {
+          background-color: $color-orange;
+          color: white;
+        }
+  
+        &:hover:not(.active) {
+          background-color: #ddd;
+          text-decoration: underline;
+        }
+        
+
+        &:last-child {
+          font-weight: 900;
+        }
+      }
+    }
+  }
 }
+
 
 aside {
   float: right;

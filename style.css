@@ -517,7 +517,7 @@ section {
   float: left;
   width: 68%;
 }
-section article, section .blank, section button {
+section article, section .blank, section button, section .pagination {
   width: 100%;
 }
 section article {
@@ -548,6 +548,32 @@ section button {
 section button img, section button .save-search-section {
   display: inline-block;
   vertical-align: middle;
+}
+section .pagination {
+  text-align: center;
+  margin: 3rem auto;
+}
+section .pagination .page-number {
+  display: inline-block;
+}
+section .pagination .page-number a {
+  color: #3838c5;
+  float: left;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+section .pagination .page-number a.active {
+  background-color: #ff6e14;
+  color: white;
+}
+section .pagination .page-number a:hover:not(.active) {
+  background-color: #ddd;
+  text-decoration: underline;
+}
+section .pagination .page-number a:last-child {
+  font-weight: 900;
 }
 
 aside {
