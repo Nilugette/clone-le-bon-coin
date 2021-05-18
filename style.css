@@ -55,6 +55,7 @@ html {
 body {
   font-size: 1.4em;
   margin: 0;
+  position: relative;
 }
 
 a {
@@ -146,7 +147,7 @@ a {
 
 .main {
   position: relative;
-  height: 1500px;
+  height: 3800px;
   z-index: 4;
 }
 
@@ -160,7 +161,7 @@ a {
 
 .container {
   position: absolute;
-  top: 10%;
+  top: 4%;
   left: 10%;
   right: 10%;
   margin: 0 auto;
@@ -595,6 +596,50 @@ aside article .description {
 footer {
   clear: both;
   margin-bottom: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+footer .footer-1 {
+  background-color: #f4f4fc;
+}
+footer .footer-1 .footer-category, footer .footer-1 .footer-region {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .footer-1 .footer-category .grid-container, footer .footer-1 .footer-region .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .footer-1 .footer-category .grid-container div, footer .footer-1 .footer-region .grid-container div {
+  margin: 20px;
+}
+footer .footer-1 .footer-category .grid-container div hr, footer .footer-1 .footer-region .grid-container div hr {
+  border: 1px solid #8191a0;
+  opacity: 0.3;
+}
+footer .footer-1 .footer-category .grid-container div ul, footer .footer-1 .footer-region .grid-container div ul {
+  margin: 20px;
+}
+footer .footer-1 .footer-category .grid-container div ul li:first-child, footer .footer-1 .footer-region .grid-container div ul li:first-child {
+  color: #000;
+  font-weight: 900;
+  line-height: 1.6;
+}
+footer .footer-1 .footer-category .grid-container div ul li a, footer .footer-1 .footer-region .grid-container div ul li a {
+  color: #8191a0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+footer .footer-1 .footer-category .grid-container div ul li a:hover, footer .footer-1 .footer-region .grid-container div ul li a:hover {
+  color: #ff6e14;
+}
+footer .footer-2 {
+  background-color: #474747;
+  color: #fff;
 }
 
 @media only screen and (max-width: 970px) {

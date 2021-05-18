@@ -7,6 +7,7 @@ $color-black: #000;
 $blue-pale: rgb(244, 244, 252);
 $color-blue: rgb(56, 56, 197);
 $color-blue-pastel: #8191a0;
+$footer-background: #474747;
 $box-shadow: 0 -1px 4px 0 rgb(26 26 26 / 8%), 0 4px 8px 0 rgb(26 26 26 / 12%);
 
 $toggle-background-color-on: #ff6e14;
@@ -34,6 +35,7 @@ html {
 body {
   font-size: 1.4em;
   margin:0;
+  position: relative;
 }
 
 a {
@@ -138,12 +140,14 @@ a {
   height: 0; 
 } 
 
+
 .main {
   position: relative;
-  height: 1500px; 
+  height: 3800px;
   z-index: 4;
   
 }
+
 
 .header-main {
   display: block;
@@ -155,7 +159,7 @@ a {
 
 .container {
   position: absolute;
-  top: 10%;
+  top: 4%;
   left: 10%;
   right: 10%;
   margin: 0 auto;
@@ -677,11 +681,73 @@ aside {
   }
 }
 
+
 footer {
   clear: both;
   margin-bottom: 0;
-}
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 4;
 
+  .footer-1 {
+    background-color: $blue-pale;
+
+    .footer-category, .footer-region {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .grid-container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        div {
+          margin: 20px;
+          
+          hr {
+            border: 1px solid $color-blue-pastel;
+            opacity: 0.3;
+          }
+
+          ul {
+            margin: 20px;
+
+            li:first-child {
+              color:$color-black;
+              font-weight: 900;
+              line-height: 1.6;
+            }
+
+            li {
+              a {
+                color: $color-blue-pastel;
+                font-size: 1.2rem;
+                font-weight: bold;
+                line-height: 1.6;
+
+                &:hover {
+                  color: $color-orange;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+
+
+    
+  }
+  
+  .footer-2 {
+    background-color: $footer-background;
+    color: $color-white
+  }
+  
+}
 
 
 
